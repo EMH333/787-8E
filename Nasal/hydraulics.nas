@@ -1,4 +1,4 @@
-# Boeing 787-8 Hydraulic Pump System
+# Boeing 787-E Hydraulic Pump System
 # by Omega Pilot (MIA0001)
 
 var hydraulics = {

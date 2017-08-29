@@ -1,6 +1,6 @@
 ################################################################################
 #
-# Boeing 787-8 Dreamliner Terrain Map (also used in other aircraft)
+# Boeing 787-E Dreamliner Terrain Map (also used in other aircraft)
 #
 # The idea about getting a terrain map without compromising much frame-rate is
 # to sweep the changes across the screen instead of getting the whole screen at
@@ -9,7 +9,7 @@
 # points, we could get just 16 and interpolate the rest to this and it would be
 # almost just as good.
 #
-# Licensed along with the 787-8 under GNU GPL v2
+# Licensed along with the 787-E under GNU GPL v2
 #
 ################################################################################
 

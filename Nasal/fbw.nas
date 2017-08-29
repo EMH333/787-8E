@@ -1,5 +1,5 @@
 #########################################
-## FLY BY WIRE SYSTEM FOR BOEING 787-8 ##
+## FLY BY WIRE SYSTEM FOR BOEING 787-E ##
 #########################################
 ## Designed by Omega Pilot, Redneck    ##
 ## and Bicyus			       ##
@@ -265,7 +265,7 @@ var fbw = {
 			}
 
 
-			## BOEING 787-8 SPECIFIC > Trailing Edge Camber
+			## BOEING 787-E SPECIFIC > Trailing Edge Camber
 
 
 			## ALPHA PROTECTION

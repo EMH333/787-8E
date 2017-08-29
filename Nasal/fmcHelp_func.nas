@@ -1,6 +1,6 @@
 ################################################################################
 #
-# Boeing 787-8 FMC Automatic Word Completion
+# Boeing 787-E FMC Automatic Word Completion
 #-------------------------------------------------------------------------------
 #
 # fmcHelp.parseWords - parses the Possible_Words.xml file and moves to Help Tree
@@ -38,7 +38,7 @@ var fmcHelp = {
 		
 		# Parse Navaids
 		
-		# print("Loading 787-8 FMC NavData/navaids");
+		# print("Loading 787-E FMC NavData/navaids");
 		
 		# io.read_properties(root ~ "/FMC-DB/NavData/navaids.xml", "/NavData/");
 		

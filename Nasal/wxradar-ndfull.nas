@@ -5,7 +5,7 @@
 #
 # The Weather systems in FlightGear at the time of this wxradar development were
 # either circles or rectangles thus making their actual wxradar display unreali-
-# tic. The other "PIXELS" model is still available in the Boeing 787-8's 'Devel'
+# tic. The other "PIXELS" model is still available in the Boeing 787-E's 'Devel'
 # directory to be used when FlightGear's weather system is further advanced.
 #
 ################################################################################

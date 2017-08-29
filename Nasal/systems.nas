@@ -1,6 +1,6 @@
 ## PRINT STARTUP MESSAGES
 #########################
-screen.log.write("Welcome Aboard the Boeing 787-8 Aircraft!", 1, 1, 1);
+screen.log.write("Welcome Aboard the Boeing 787-E Aircraft!", 1, 1, 1);
 setprop("/instrumentation/sysinfo/max", 0);
 setprop("/instrumentation/sysinfo/first", 0);
 b787.sysinfo.log_msg("[SYS] Testing EICAS Warning Display", 2);
@@ -8,7 +8,7 @@ b787.sysinfo.log_msg("[SYS] Systems Check and Logger Initialized", 0);
 
 ## LIVERY SELECT
 ################
-aircraft.livery.init("Aircraft/787-8/Models/Liveries");
+aircraft.livery.init("Aircraft/787-E/Models/Liveries");
 
 ## LIGHTS
 #########
@@ -304,3 +304,26 @@ setlistener("controls/gear/gear-down", func
   props.globals.getNode("controls/gear/gear-down").setBoolValue(1);
   }
  });
+
+ # wingflexer bug workaround (written by Andreas Z)
+var D_param_0 = getprop('/sim/systems/wingflexer/params/D');
+var D_param_1 = 10 * D_param_0;
+var disable_wingflexer = func{
+    setprop('/sim/systems/wingflexer/params/D',D_param_1);
+    var simtime = getprop('/sim/time/elapsed-sec');
+    logprint(3,'disable_wingflexer: Set parameter D to '~D_param_1~' at '~simtime~' sec.');
+}
+var enable_wingflexer = func{
+     setprop('/sim/systems/wingflexer/params/D',D_param_0);
+     var simtime = getprop('/sim/time/elapsed-sec');
+     logprint(3,'enable_wingflexer: Set parameter D to '~D_param_0~' at '~simtime~' sec.');
+}
+disable_wingflexer();
+setlistener("/sim/signals/fdm-initialized",func{
+  var todo_when_sim_is_ready = func{
+      enable_wingflexer();
+ }
+  var sim_ready_tmr = maketimer( 14.0, todo_when_sim_is_ready);
+  sim_ready_tmr.singleShot = 1;
+  sim_ready_tmr.start();
+},0,0);

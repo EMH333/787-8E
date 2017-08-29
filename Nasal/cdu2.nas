@@ -217,7 +217,7 @@ setprop("/controls/cdu[1]/display/r5-label", "");
 setprop("/controls/cdu[1]/display/r6-label", "");
 setprop("/controls/cdu[1]/display/r7-label", "");
 
-setprop("/controls/cdu[1]/display/l1", "Boeing 787-8");
+setprop("/controls/cdu[1]/display/l1", "Boeing 787-E");
 setprop("/controls/cdu[1]/display/l2", "");
 setprop("/controls/cdu[1]/display/l3", "");
 setprop("/controls/cdu[1]/display/l4", "");

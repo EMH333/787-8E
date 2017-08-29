@@ -1,5 +1,5 @@
 ###################################
-# Boeing 787-8 Dreamliner Authors #
+# Boeing 787-E Dreamliner Authors #
 ###################################
 
 > Omega95  : Cockpit, FDM, Nasal, Instruments, Ground, Database, Sounds, Systems

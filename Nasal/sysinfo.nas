@@ -99,7 +99,7 @@ var sysinfo = {
 		
 		print("");
 	
-		print("======================= Boeing 787-8 System Log =======================");
+		print("======================= Boeing 787-E System Log =======================");
 		
 		print("");
 		
